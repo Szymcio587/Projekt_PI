@@ -27,11 +27,10 @@ int screen_1::Run(sf::RenderWindow &App)
     bool is_playing_sound = false;
     sf::Music music;
 
-	Tekst Menu1("Szymon Talar", 480, 220);
-	Tekst Menu2("Jakub Prejznar", 480, 450);
+	Tekst Menu1("Szymon Talar", 450, 270, 45);
 	Tekst Menu4("back", 100, 650, 20);
 	Tekst Menu5("exit", 100, 700, 20);
-	Tekst Menu6("The game was made by:", 275, 25, 55);
+	Tekst Menu6("The game was made by:", 290, 25, 55);
 
 	if (!Texture.loadFromFile("images/tree.png"))
 		return (-1);
@@ -54,8 +53,6 @@ int screen_1::Run(sf::RenderWindow &App)
 
     Menu1.load();
     Menu1.t.setFont(Font);
-	Menu2.load();
-	Menu2.t.setFont(Font);
 	Menu4.load();
 	Menu4.t.setFont(Font);
     Menu5.load();
@@ -115,7 +112,6 @@ int screen_1::Run(sf::RenderWindow &App)
 		{
             App.draw(Menu1.t);
             App.draw(Menu5.t);
-		    App.draw(Menu2.t);
 			App.draw(Menu4.t);
 			App.draw(Menu6.t);
 		}
