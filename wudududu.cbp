@@ -45,13 +45,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-std=gnu++14" />
-			<Add directory="C:/Users/Szef/Desktop/SFML-2.4.2/include" />
+			<Add directory="include" />
 		</Compiler>
 		<Linker>
 			<Add option="-static-libstdc++" />
 			<Add option="-static-libgcc" />
 			<Add option="-static" />
-			<Add directory="C:/Users/Szef/Desktop/SFML-2.4.2/lib" />
+			<Add directory="lib" />
 		</Linker>
 		<Unit filename="hpp/button.hpp" />
 		<Unit filename="hpp/cScreen.hpp" />
